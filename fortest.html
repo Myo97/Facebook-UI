@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" href="feathericon/feather.css">
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            height: 4000px;
+        }
+        .facebook-phone{
+            width: 100%;
+             padding: 10px 15px;
+             display: flex;
+             justify-content: space-between;
+             background-color: black;
+             align-items: center;
+        }
+        .facebook-phone div{
+            color: white;
+        }
+        .facebook-phone div i{
+            font-size: 21px;
+            font-weight: 900;
+            padding: 10px;
+            border-radius: 50%;
+            background-color: blue;
+        }
+
+        .center.phone{
+            position: sticky;
+            top: 0;
+        }
+        .center-box{
+        display: flex;
+        justify-content: center;
+        }
+
+        .center-link{
+        display: flex;
+        width: 100px;
+        height: 60px;
+        margin: 0 5px;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        border-bottom: 5px solid var(--semi_dark);
+        border-top: 5px solid var(--semi_dark);
+        position: relative;
+        transition: 0.5s;
+        cursor: pointer;
+}
+.center-link:hover{
+    background-color: var(--soft_dark);
+    border-radius: 8px;
+}
+.center-link.active{
+    border-bottom-color: var(--primary);
+    color: var(--primary) !important;
+}
+.center-link.active:hover{
+    background-color: var(--semi_dark);
+    border-radius: 0;
+}
+.center-link.active .center-icon{
+    color: var(--primary) !important;
+    
+}
+.center-icon{
+    font-size: 30px;
+}
+.center-link .notification{
+    background-color: var(--darnger);
+    padding: 1px 5px;
+    border-radius: 12px;
+    font-size: 14px;
+    color: var(--text_light);
+    position: absolute;
+    top: 5px;
+    right: 19px;
+    font-weight: 900;
+}
+    </style>
+</head>
+<body>
+   <div class="forphone">
+    <div class="facebook-phone">
+        <div class="facebook-text"><span style="font-size: 33px; font-weight: 900;">Facebook</span></div>
+        <div>
+            <i class="feather-search"></i>
+            <i class="feather-message-square" style="margin-left: 5px;"></i>
+        </div>
+    </div>
+    <div class="center phone">
+        <div class="center-box">
+            <div class="center-link active">
+                <i class="feather-home center-icon"></i>
+            </div>
+            <div class="center-link">
+                <i class="feather-flag center-icon"></i>
+            </div>
+            <div class="center-link">
+                <i class="feather-airplay center-icon"></i>
+                <span class="notification">9+</span>
+            </div>
+            <div class="center-link">
+                <i class="feather-users center-icon"></i>
+                <span class="notification">5</span>
+            </div>
+            <div class="center-link">
+                <i class="feather-grid center-icon"></i>
+            </div>
+        </div>
+    </div>
+   </div>
+</body>
+</html>
